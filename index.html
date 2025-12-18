@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Exercise</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <ul class="header__languages">
+                    <li class="header__language language-header">
+                        <input class="language-header__input" type="radio" name="language" id="eng">
+                        <label class="language-header__subinput" type="button" for="eng"><span>Eng</span></label>
+                    </li>
+                    <li class="header__language language-header">
+                        <input class="language-header__input" type="radio" name="language" id="aze">
+                        <label class="language-header__subinput" type="button" for="aze"><span>Aze</span></label>
+                    </li>
+                    <li class="header__language language-header _choosed">
+                        <input class="language-header__input" type="radio" name="language" id="rus" checked>
+                        <label class="language-header__subinput" type="button" for="rus"><span>Рус</span></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__logo"><img src="#" alt="Logo"></div>
+                    <nav class="header__links links-header">
+                        <ul class="links-header__inner">
+                            <li class="links-header__item"><a href="#">Lorem ipsum dolor sit </a></li>
+                            <li class="links-header__item"><a href="#">Lorem ipsum dolor</a></li>
+                            <li class="links-header__item"><a href="#">Lorem ipsum dolor </a></li>
+                            <li class="links-header__item"><a href="#">Lorem ipsum </a></li>
+                            <li class="links-header__item"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing </a></li>
+                            <li class="links-header__item"><a href="#">Lorem ipsum dolor sit </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#">ПУНКТ МЕНЮ</a></li>
+                        <li class="menu__item"><a href="#">Длинный пункт меню</a></li>
+                        <li class="menu__item"><a href="#">очень Длинный пункт меню</a></li>
+                        <li class="menu__item"><a href="#">еще пункт</a></li>
+                        <li class="menu__item menu__item_select select_item-menu">
+                            <button class="select_item-menu__opener" type="button">п. меню</button>
+                            <div class="select_item-menu__container">
+                                <ul class="select_item-menu__list">
+                                    <li class="select_item-menu__link"><a href="#">Зарегестрироваться</a></li>
+                                    <li class="select_item-menu__link"><a href="#">Что такое ортокератология</a></li>
+                                    <li class="select_item-menu__link"><a href="#">История компании Парагон</a></li>
+                                    <li class="select_item-menu__link"><a href="#">10 причин приобрести линзы Парагон для Вашей практики</a></li>
+                                    <li class="select_item-menu__link"><a href="#">Рекомендации по подбору линз Парагон (обучение пользованию)</a></li>
+                                    <li class="select_item-menu__link"><a href="#">Сдать экзамен online</a></li>
+                                    <li class="select_item-menu__link"><a href="#">Связаться с дестрибьютором </a></li>
+                                    <li class="select_item-menu__link"><a href="#">Задать вопрос консультанту компании Парагон</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="menu__burger burger" type="button">
+                        <div class="burger__icon"><span></span></div>
+                        <span>Меню</span>
+                    </button>
+                </nav>
+                <button class="header__closer" type="button"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="form">
+            <div class="container">
+                <div class="form__inner">
+                    <form class="form__main main-form" action="#">
+                        <legend class="main-form__heading">Form</legend>
+                        <div class="main-form__items">
+                            <div class="main-form__item item-main-form _bigger">
+                                <label class="item-main-form__subinput" for="first">Label #1</label>
+                                <input class="item-main-form__input" type="text" id="first">
+                            </div>
+                            <div class="main-form__item item-main-form">
+                                <label class="item-main-form__subinput" for="second">Label #2</label>
+                                <input class="item-main-form__input" type="text" id="second">
+                            </div>
+                            <div class="main-form__item item-main-form">
+                                <label class="item-main-form__subinput" for="third">Label #3</label>
+                                <input class="item-main-form__input" type="text" id="third">
+                            </div>
+                            <div class="main-form__item item-main-form">
+                                <label class="item-main-form__subinput" for="fourth">Label #4</label>
+                                <input class="item-main-form__input" type="text" id="fourth">
+                            </div>
+                            <div class="main-form__item item-main-form">
+                                <label class="item-main-form__subinput" for="fifth">Label #5</label>
+                                <input class="item-main-form__input" type="text" id="fifth">
+                            </div>
+                        </div>
+                        <button class="main-form__submit button_blue">Submit</button>
+                    </form>
+                    <div class="form__info info-form">
+                        <div class="info-form__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                            <p><strong>Ut enim ad minim veniam, quis nostrud exercitation</strong></p>
+                        </div>
+                        <a href="#" class="info-form__link button_blue">More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <figure class="cards__item item-cards">
+                    <picture class="item-cards__image">
+                        <source srcset="#" type="webp/image">
+                        <img src="#" alt="Image">
+                    </picture>
+                    <figcaption class="item-cards__subimage">
+                        <h3 class="item-cards__title">Lorem ipsum dolor sit</h3>
+                        <div class="item-cards__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                    </figcaption>
+                </figure>
+                <figure class="cards__item item-cards">
+                    <picture class="item-cards__image">
+                        <source srcset="#" type="webp/image">
+                        <img src="#" alt="Image">
+                    </picture>
+                    <figcaption class="item-cards__subimage">
+                        <h3 class="item-cards__title">Lorem ipsum</h3>
+                        <div class="item-cards__description">Lorem ipsum dolor sit amet, consectetur elit, sed do</div>
+                    </figcaption>
+                </figure>
+                <figure class="cards__item item-cards">
+                    <picture class="item-cards__image">
+                        <source srcset="#" type="webp/image">
+                        <img src="#" alt="Image">
+                    </picture>
+                    <figcaption class="item-cards__subimage">
+                        <h3 class="item-cards__title">Lorem ipsum dolor</h3>
+                        <div class="item-cards__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem</div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="blocks">
+            <div class="container">
+                <div class="blocks__inner">
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                    <div class="blocks__item"></div>
+                </div>
+                <button class="blocks__show" type="button">More</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__column column-footer">
+                    <li class="column-footer__link"></li>
+                    <li class="column-footer__link"></li>
+                    <li class="column-footer__link"></li>
+                </ul>
+                <ul class="footer__column column-footer">
+                    <li class="column-footer__link"></li>
+                    <li class="column-footer__link"></li>
+                    <li class="column-footer__link"></li>
+                </ul>
+                <ul class="footer__column column-footer">
+                    <li class="column-footer__link"></li>
+                    <li class="column-footer__link"></li>
+                    <li class="column-footer__link"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
