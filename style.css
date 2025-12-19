@@ -40,7 +40,7 @@ body::after{
 main{
     flex: 1 1 auto;
 }
-button:hover, input:hover{
+button:hover, input[type="radio"]:hover{
     cursor: pointer;
 }
 a:focus, button:focus, input:focus{
@@ -48,6 +48,16 @@ a:focus, button:focus, input:focus{
 }
 body._locked{
     overflow-y: hidden;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("fonts/Arial.woff2") format("woff2"),
+    url("fonts/Arial.woff") format("woff"),
+    url("fonts/Arial.ttf") format("ttf");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
 }
 
 .button_blue{
@@ -107,7 +117,7 @@ a.button_blue{
 @media (max-width: 61.25em) and (min-width: 48.0625em) {
     .header__top::after{
         -webkit-mask-image: radial-gradient(
-            calc(8.28125rem + 15px) 2.1875rem at calc(8.28125rem + 20px) calc(2.1875rem + 10px), 
+            calc(8.28125rem + 15px) 2.1875rem at calc(8.28125rem + 20px * 1.25) calc(2.1875rem + 10px), 
             transparent 98%, 
             black 100%
         );

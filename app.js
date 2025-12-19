@@ -14,8 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const showMore = document.querySelector(".blocks__show");
         const blocksContainer = document.querySelector(".blocks__inner");
         if(showMore && blocksContainer){
+            const unActivePart = showMore.querySelector(".un-active");
+            const activePart = showMore.querySelector(".active");
             showMore.addEventListener("click", () =>{
                 blocksContainer.classList.toggle("_show-hidden");
+                if(unActivePart && activePart){
+                    unActivePart.style.display = blocksContainer.classList.contains("_show-hidden") ? "none" : "";
+                    activePart.style.display = !blocksContainer.classList.contains("_show-hidden") ? "none" : "";
+                }
             });
         }
     }    
